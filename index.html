@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#ELENÃO #ELENUNCA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+</head>
+
+<body>
+    <div id="particles-js">
+
+    </div>
+    <img id="elenao-img" src="./elenao-assets/elenao.png" alt="">
+    <a href="/index2" class="button">
+        <span>Continuar</span>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', './elenao-assets/particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+    <style>
+        #particles-js {
+            background-color: rgb(40, 40, 40);
+            position: fixed;
+        }
+
+        html,
+        body,
+        #particles-js {
+            width: 100%;
+            height: 100%
+        }
+
+        .button {
+            border: 5px solid;
+            border-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%) 5;
+            position: absolute;
+            padding: 3px;
+            display: inline-block;
+            border-radius: 10px;
+            bottom: 1rem;
+            left: 1rem;
+        }
+
+        .button span {
+            display: inline-block;
+            color: white;
+            text-transform: uppercase;
+            padding: 1.5rem 3.5rem;
+            border-radius: 5px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        #elenao-img {
+            position: absolute;
+            bottom: 0;
+            right: 1rem;
+            width: 45%;
+        }
+
+        @media (max-width:720px) {
+            #elenao-img {
+                left: 50%;
+                top: 35%;
+                transform: translate(-50%, -50%);
+                width: 95%;
+            }
+            .button {
+                left: 50%;
+                transform: translateX(-50%);
+
+            }
+            .button span {
+                display: inline-block;
+                color: white;
+                text-transform: uppercase;
+                padding: 0.5rem 2rem;
+                border-radius: 5px;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                font-weight: 350;
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</body>
+
+</html>
